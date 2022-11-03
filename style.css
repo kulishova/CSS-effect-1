@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@1000&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  background: url(https://img1.akspic.ru/attachments/crops/2/9/3/2/22392/22392-pejzazhi_gor-ozero_peho-nacionalnyj_park_torres_del_pajne-torres_del_pajne_v_chili-gora-1920x1080.jpg)
+    center / cover;
+  font-family: 'Nunito', sans-serif;
+}
+.text {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  color: black;
+  font-size: 7vw;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  mix-blend-mode: screen;
+  transition: 0.7s;
+  transform: translate(-50%, -50%) scale(1);
+  backdrop-filter: brightness(0%);
+  animation: animatime 4s infinite alternate;
+}
+.text:hover {
+  transform: translate(-50%, -50%) scale(100);
+  backdrop-filter: brightness(100%);
+}
+
+@keyframes animatime {
+  from {
+    transform: translate(-50%, -50%) scale(1);
+    backdrop-filter: brightness(0%);
+  }
+  to {
+    transform: translate(-50%, -50%) scale(400);
+    backdrop-filter: brightness(100%);
+  }
+}
